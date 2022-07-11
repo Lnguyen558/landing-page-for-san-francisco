@@ -1,0 +1,292 @@
+/* reset page to margin 0 and padding 0 */
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* reset all image to 100% */
+img{
+    max-width: 100%;
+}
+
+
+/* Format Container */
+#my-container{
+
+    width: 100%;
+    min-height: 100vh;
+
+    overflow-y: auto;
+
+    border: 3px solid red;
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)), url(img/background.png);
+
+ 
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+
+
+   
+
+}
+
+/* Start -- format navigation bar */
+
+        /* format navbar div */
+        .navbar{
+            margin-top: 10px;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        
+        }
+
+        /* format logo */
+        img#logo{
+            width: 50px;
+            cursor: pointer;
+        
+        }
+
+        /* format nav tag */
+        nav{
+
+            /* Let all the flexible items be the same length,
+            regardless of its content: 
+            https://www.w3schools.com/cssref/css3_pr_flex.asp */
+            flex: 1;
+            text-align: right;
+            
+
+
+        }
+
+        nav ul li{
+            display: inline-block;
+            margin-left: 60px;
+        }
+
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+
+        /* format menu icon */
+        img#menu-icon{
+            width: 30px;
+            cursor: pointer;
+            margin-left: 40px;
+        }
+
+        /* End -- format navigation bar */
+
+
+/* Start -- two columns for main page */
+
+        /* format the row  div */
+        .row{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        /* Start -- format the left colum*/
+        .col#left-col{
+            flex-basis: 40%;
+
+            border: 1px solid red;
+            
+            
+
+        }
+
+        .col h1{
+            font-size: 100px;
+            color: orangered;
+            text-align: center;
+        }
+
+        .col p{
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 3px;
+            color: white;
+        }
+
+        button{
+            width: 180px;
+            display: block;
+            color: red;
+            font-size: 20px;
+            padding: 12px 0;
+            background: #fff;
+            border: 0;
+            border-radius: 20px;
+            outline: none;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+          
+
+        }
+
+        /* End -- format for left col */
+
+
+
+    /* Starts -- format right column for the four cards  */
+
+
+        .col#right-col{
+            flex-basis: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            
+         
+            box-sizing: border-box;
+
+            border: 1px solid red;
+
+        }
+
+
+        .card{
+            
+            flex-basis: 40%;
+            height: 200px;
+        
+        
+            border-radius: 30px; 
+            padding: 15px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            background-position: center;
+            background-size: cover; 
+
+            text-align: center;
+
+            border: 2px solid yellow;
+
+        }
+
+
+
+        .card h5{
+            color: black;
+            font-size: 15px;
+            margin-bottom: 10px;
+            transition: transform(1s);
+        }
+
+        .card#card1{
+            background-image: url(img/pic-1.png);
+        }
+
+        .card#card2{
+            background-image: url(img/pic-1.png);
+        }
+
+        .card#card3{
+            background-image: url(img/pic-3.png);
+        }
+
+        .card#card4{
+            background-image: url(img/pic-4.png);
+        }
+
+
+        /* hover effect on card when hovering */
+        .card:hover{
+            transform: translateY(-10px);
+            border: 3px solid red;
+            
+        }
+
+    /* Ends -- format right column for the four cards  */
+
+/* End -- two columns for main page */
+
+
+
+/* Start -- format @media for smaller screen*/
+@media screen  and (max-width: 768px)
+{
+
+
+        .navbar{
+            margin-top: 20px;
+        }
+
+
+
+        nav{
+            display: none;
+        }
+
+        .col#left-col{
+            flex-basis: 100%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .col#left-col h1{
+            color: red;
+            font-size: 70px;
+            letter-spacing: 3px;
+            
+            
+        }
+
+        .col#left-col p{
+            font-size: 20px;
+            line-height: 25px;
+            color: white;
+            letter-spacing: 3px;
+            
+        }
+
+
+        button{
+            color: red;
+        }
+
+
+        .col#right-col{
+            flex-basis: 100%;
+        }
+
+        .card{
+            flex-basis: 100%;
+        }
+
+
+
+        }
+
+
+
+/* End -- format for smaller screen*/

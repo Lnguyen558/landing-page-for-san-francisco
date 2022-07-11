@@ -1,0 +1,291 @@
+/* add google font */
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Splash&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #444;
+  background: color #f7f7f7;
+  overflow: auto;
+}
+
+body{
+  height: 100%;
+
+  background-image: url(img/sf-background.avif);
+
+
+  /* height: 100vh; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 60px;
+}
+
+/* reset all image to 100% */
+img {
+  /* max-width: 100%; */
+}
+
+body {
+  border: 3px solid goldenrod;
+}
+
+/* Start -- format for navigation bar */
+
+/* format navbar div */
+#my-navbar {
+  background: linear-gradient(30deg, rgb(229, 7, 7), 60%, rgb(205, 205, 41));
+
+
+  
+ 
+
+}
+
+/* Format city logo */
+.navbar #city-logo {
+  max-width: 90%;
+  max-height: 100px;
+
+  margin-left: 5%;
+  border-radius: 50%;
+  border: 4px solid orange;
+ 
+  
+}
+
+/* End -- format for navigation bar */
+
+/* Start -- format main section */
+
+/* Start -- format for row with two columns */
+
+/* format background image */
+.main-row {
+
+
+  width: 100%;
+  min-height: 80vh;
+ 
+  /* height: 100vh; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+
+  border: 1px solid goldenrod;
+}
+
+/* format the row with two column to be center the page */
+
+/* Start-- format left column */
+.main-row .left-col {
+  /* border: 3px solid red; */
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/* format left-col h1 */
+.main-row .left-col h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+
+  color: rgb(189, 12, 12);
+  letter-spacing: 3px;
+  padding-left: 20px;
+}
+
+/* format left-col p */
+.main-row .left-col p {
+  width: 60%;
+  color: yellow;
+  /* margin-left: auto;
+            margin-right: auto; */
+
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+
+  padding-left: 20px;
+}
+
+/* format left-col p span */
+.main-row .left-col p span {
+  color: yellow;
+}
+
+/* format left-col button */
+.main-row .left-col #my-btn {
+  color: yellow;
+  font-size: 30px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background-color: red;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+  width: 200px;
+
+  margin-left: 200px;
+}
+
+/* add hover effect to button */
+.main-row .left-col #my-btn:hover {
+  color: red;
+  background-color: rgb(227, 227, 157);
+  border: 3px solid red;
+}
+
+/* End-- format left column */
+
+/* Start-- format right column */
+.main-row .right-col {
+  /* border: 2px solid yellow; */
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-row .right-col .inside-row {
+  /* border: 2px solid red; */
+  display: flex;
+
+  justify-content: space-around;
+  width: 70%;
+  max-height: 200px;
+
+  margin-bottom: 20px;
+}
+
+.main-row .right-col h1 {
+  font-family: 'Dancing Script', cursive;
+  color: orangered;
+}
+
+.main-row .right-col .inside-row .card {
+  width: 50%;
+  margin-right: 10px;
+  border: 1px solid black;
+
+  padding: 2px;
+
+  border-radius: 20px;
+
+  background: goldenrod;
+}
+
+.main-row .right-col .inside-row .card img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
+}
+
+/* End-- format right column */
+
+/* End -- format for row with two columns */
+
+/* End -- format main section  */
+
+/* Start -- format for footer */
+
+footer {
+  height: 71px;
+  background: linear-gradient(30deg, rgb(229, 7, 7), 60%, rgb(205, 205, 41));
+  opacity: 0.5;
+}
+
+/* End -- format for footer */
+
+/* Start -- format for smaller screen*/
+@media screen and (max-width: 768px) {
+  /* format background image */
+  .main-row {
+    flex-wrap: wrap;
+  }
+
+  /* Start-- format left column */
+  .main-row .left-col {
+    /* border: 3px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  /* format left-col h1 */
+
+  .main-row .left-col h1 {
+    display: none;
+  }
+
+  /* format left-col p */
+  .main-row .left-col p {
+    width: 100%;
+    padding: 20px;
+
+    color: yellow;
+    letter-spacing: 3px;
+  }
+
+  /* format left-col p span */
+  .main-row .left-col p span {
+    color: rgb(216, 4, 4);
+    font-family: 'Dancing Script', cursive;
+    font-size: 200%;
+  }
+
+  /* format Explore button */
+  .main-row .left-col #my-btn {
+    margin-left: 0;
+  }
+
+  /* add hover effect to button */
+  .main-row .left-col #my-btn:hover {
+    color: red;
+    background-color: rgb(227, 227, 157);
+    border: 3px solid red;
+  }
+
+  /* End-- format left column */
+
+  /* Start-- format right column */
+  .main-row .right-col {
+    border: 2px solid black;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .main-row .right-col h1 {
+    font-size: 300%;
+    color: yellow;
+  }
+
+  .main-row .right-col .inside-row {
+    width: 90%;
+  }
+
+  .main-row .right-col .inside-row .card img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* End -- format for smaller screen*/

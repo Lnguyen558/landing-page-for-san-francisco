@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- for bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- for icon from font awesome -->
+    <script
+      src="https://kit.fontawesome.com/082f81ac36.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- youtube link tutorial
+    https://www.youtube.com/watch?v=Oa9LTDR9ugU&t=8s 
+
+    the youtube tutorial show how to create this page, but it is not responsive
+    , i modified couple code to make it responsive to small devices-->
+
+    <!--  -->
+
+    <title>Template</title>
+  </head>
+  <body>
+    <div class="container-fluid" id="my-container">
+      <!-- Start -- Navigation bar -->
+      <div class="navbar">
+        <img id="logo" src="img/logo.png" alt="" />
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Region</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav>
+
+        <img id="menu-icon" src="img/menu.png" alt="" />
+      </div>
+
+      <!-- End -- Naviation Bar -->
+
+      <!-- Start -- two columns for main page -->
+      <div class="row">
+        <!-- Left col -->
+        <div class="col" id="left-col">
+          <h1>Sahara</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            quas ad delectus omnis vel assumenda cupiditate tempore reiciendis
+            eligendi sint?
+          </p>
+          <button type="button">Explore</button>
+        </div>
+
+        <!-- right col  -->
+        <div class="col" id="right-col">
+          <!-- one of the four cards -->
+          <div class="card" id="card1">
+            <h5>Western Desert</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              natus!
+            </p>
+          </div>
+
+          <!-- one of the four cards -->
+          <div class="card" id="card2">
+            <h5>Al Bagawat</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              natus!
+            </p>
+          </div>
+
+          <!-- one of the four cards -->
+          <div class="card" id="card3">
+            <h5>Pyramid Of Giza</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              natus!
+            </p>
+          </div>
+
+          <!-- one of the four cards -->
+          <div class="card" id="card4">
+            <h5>Kalahari Desert</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              natus!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ends -- twoo columns for main page -->
+    </div>
+  </body>
+</html>
